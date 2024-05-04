@@ -39,7 +39,7 @@ const MediaUploader = ({
         description: "1 credit was deducted from your account",
         duration: 5000,
         className: "success-toast"
-    })
+    });
   }
 
   const onUploadErrorHandler = (result: any) => {
@@ -48,7 +48,7 @@ const MediaUploader = ({
         description: "Please try again",
         duration: 5000,
         className: "error-toast"
-    })
+    });
   }
 
   return (
