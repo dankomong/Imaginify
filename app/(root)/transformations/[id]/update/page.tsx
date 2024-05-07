@@ -15,8 +15,7 @@ const Page = async ({ params: { id } }: SearchParamProps) => {
   const user = await getUserById(userId);
   const image = await getImageById(id);
 
-  const transformation =
-    transformationTypes[image.transformationType as TransformationTypeKey];
+  const transformation = transformationTypes[image.transformationType as TransformationTypeKey];
 
   return (
     <>
